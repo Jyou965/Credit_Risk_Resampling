@@ -32,13 +32,13 @@ We went through three stages of machine learning process:
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Accuracy score: 95.2%
+  * Balanced accuracy score: 95.2%
   * Precision score: 85%
   * Recall score: 91%
   * f1 score: 88%
 
 * Machine Learning Model 2:
-  * Accuracy score: 99.4%
+  * Balanced accuracy score: 99.4%
   * Precision score: 84%
   * Recall score: 99%
   * f1 score: 91%
@@ -47,7 +47,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
 * Which one seems to perform best? How do you know it performs best?
-    * Model 2, the oversampled model works better because both accuracy and f1 scores impoved.  There is a small trade off in precision for greater improvedment in recall score, meaning the oversampled data improved the ability of capturing actual positives by trading off the % of total predictions that are actually true. It is up to the user to decide if recall or precision should be the focus and whether the effectiveness is good enough for his/her purpose.
+    * Model 2, the oversampled model works better because both accuracy and f1 scores impoved.  There is a small trade off in precision for greater improvedment in recall score, meaning the oversampled data improved the ability of capturing actual positives by trading off the % of total predictions that are actually true. For credit risk prediction purpose, recall is more important than precision as the cost of having false negatives is higher than the cost of having false positives.
 
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
     * It is more important to predict the '1's, which are risky loans.  And this category is inherently small in the sample data.
